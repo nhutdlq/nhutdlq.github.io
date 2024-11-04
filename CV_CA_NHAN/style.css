@@ -1,0 +1,138 @@
+/* Reset và font chung */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Phần bên trái */
+.left {
+    width: 40%;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ecf0f1;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #ecf0f1;
+    margin-bottom: 5px;
+}
+
+.left p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #bdc3c7;
+}
+
+/* Các phần bên trái */
+.section {
+    margin-top: 20px;
+}
+
+.section h3 {
+    font-size: 1.2em;
+    color: #ecf0f1;
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.section p, .section ul {
+    font-size: 0.9em;
+    color: #bdc3c7;
+    margin-left: 10px;
+}
+
+.section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section ul li {
+    margin-bottom: 5px;
+}
+
+.section ul li::before {
+    content: "•";
+    color: #ecf0f1;
+    margin-right: 8px;
+}
+
+/* Phần bên phải */
+.right {
+    width: 60%;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.right .section {
+    margin-top: 20px;
+}
+
+.right .section h3 {
+    font-size: 1.2em;
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.right .section p, .right .section ul {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.right .section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.right .section ul li {
+    margin-bottom: 5px;
+}
+
+/* Các biểu tượng cho phần thông tin cá nhân */
+.icon {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.icon::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+.icon.address::before { content: "\f3c5"; } /* Icon cho địa chỉ */
+.icon.phone::before { content: "\f095"; } /* Icon cho số điện thoại */
+.icon.email::before { content: "\f0e0"; } /* Icon cho email */
