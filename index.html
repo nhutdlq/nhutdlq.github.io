@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>NHUTDLQ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đào Lê Quang Nhựt</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f5;
+            color: #333;
+        }
+
+       
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        
+        h1 {
+            color: #4a90e2;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        
+        .link-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+       
+        .link-button.about {
+            background-color: #4a90e2;
+        }
+
+        .link-button.contact {
+            background-color: #50c878;
+        }
+
+        .link-button:hover {
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
-    <h1>THIET KE WEB - DAO LE QUANG NHUT</h1>
-    <p>This is my personal website.</p>
+    <div class="container">
+        <h1>Thiết Kế Web - Đào Lê Quang Nhựt</h1>
+        <p>Bài tập cá nhân:</p>
+        <!-- Các nút liên kết đến trang nội bộ -->
+        <a href="CV_CA_NHAN/CV.html" class="link-button about">About Me</a>
+        <a href="HO_CA_VUI_NHON/ho_ca.html" class="link-button contact">Contact</a>
+    </div>
 </body>
 </html>
