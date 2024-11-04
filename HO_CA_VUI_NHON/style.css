@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #87CEEB;
+}
+
+.aquarium {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border: 5px solid #000;
+    border-radius: 15px;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.diver {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    opacity: 0.9;
+    z-index: 2;
+    transform-origin: center;
+}
+
+.fish, .shark, .turtle {
+    position: absolute;
+    transition: transform 1s linear;
+    z-index: 2;
+}
+
+/* Hiệu ứng di chuyển và xoay cho từng thợ lặn */
+.diver1 {
+    animation: complexSwimDiver1 10s cubic-bezier(0.5, 0.05, 0.1, 1) infinite alternate;
+}
+
+.diver2 {
+    animation: complexSwimDiver2 12s cubic-bezier(0.5, 0.05, 0.1, 1) infinite alternate;
+}
+
+.diver3 {
+    animation: complexSwimDiver3 8s cubic-bezier(0.5, 0.05, 0.1, 1) infinite alternate;
+}
+
+/* Keyframes phức tạp cho từng hiệu ứng của thợ lặn */
+
+@keyframes complexSwimDiver1 {
+    0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+    20% { transform: translate(100px, -20px) scale(1.1) rotate(10deg); }
+    40% { transform: translate(200px, 20px) scale(1) rotate(-10deg); }
+    60% { transform: translate(300px, -10px) scale(0.9) rotate(10deg); }
+    80% { transform: translate(400px, 30px) scale(1) rotate(-5deg); }
+    100% { transform: translate(500px, 0) scale(1) rotate(0deg); }
+}
+
+@keyframes complexSwimDiver2 {
+    0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+    15% { transform: translate(90px, 30px) scale(1.05) rotate(-10deg); }
+    35% { transform: translate(180px, -20px) scale(1) rotate(5deg); }
+    55% { transform: translate(270px, 15px) scale(0.95) rotate(-10deg); }
+    75% { transform: translate(360px, -10px) scale(1) rotate(10deg); }
+    100% { transform: translate(450px, 0) scale(1) rotate(0deg); }
+}
+
+@keyframes complexSwimDiver3 {
+    0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+    25% { transform: translate(120px, 40px) scale(1.2) rotate(15deg); }
+    50% { transform: translate(250px, -20px) scale(1) rotate(-15deg); }
+    75% { transform: translate(370px, 30px) scale(0.9) rotate(10deg); }
+    100% { transform: translate(480px, 0) scale(1) rotate(0deg); }
+}
+
+/* Các keyframe cho hiệu ứng di chuyển của cá và động vật biển khác */
+
+.fish-school {
+    animation: swimFishSchool 8s linear infinite alternate;
+}
+
+.gold-fish-school {
+    animation: swimGoldFishSchool 7s linear infinite alternate;
+}
+
+.shark {
+    animation: swimShark 10s linear infinite alternate;
+}
+
+.turtle {
+    animation: swimTurtle 12s linear infinite alternate;
+}
+
+@keyframes swimFishSchool {
+    from { transform: translateY(0); }
+    to { transform: translateY(300px); }
+}
+
+@keyframes swimGoldFishSchool {
+    from { transform: translateX(0); }
+    to { transform: translateX(700px); }
+}
+
+@keyframes swimShark {
+    from { transform: translateX(0) rotateY(0); }
+    to { transform: translateX(700px) rotateY(180deg); }
+}
+
+@keyframes swimTurtle {
+    from { transform: translateY(0); }
+    to { transform: translateY(300px); }
+}
