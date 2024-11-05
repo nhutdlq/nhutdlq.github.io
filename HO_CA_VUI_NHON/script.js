@@ -8,10 +8,11 @@ const backgrounds = [
 let currentBackgroundIndex = 0;
 
 const aquarium = document.getElementById('aquarium');
+const changeBackgroundButton = document.getElementById('changeBackgroundButton');
 
 function changeBackground() {
     currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
     aquarium.style.backgroundImage = `url('${backgrounds[currentBackgroundIndex]}')`;
 }
 
-aquarium.addEventListener('click', changeBackground);
+changeBackgroundButton.addEventListener('click', changeBackground);

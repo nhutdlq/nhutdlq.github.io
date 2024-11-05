@@ -186,3 +186,24 @@ body {
     0% { transform: translateY(0); }
     100% { transform: translateY(-400px); } 
 }
+
+.change-background-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #0077b6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change-background-button:hover {
+    background-color: #005f87;
+}
