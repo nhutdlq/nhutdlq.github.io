@@ -1,6 +1,3 @@
-/* style.css */
-
-/* Định kiểu cho toàn trang */
 body {
     margin: 0;
     display: flex;
@@ -12,7 +9,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Hồ cá */
 .aquarium {
     position: relative;
     width: 800px;
@@ -25,7 +21,6 @@ body {
     overflow: hidden;
 }
 
-/* Định kiểu cho các con vật */
 .animal {
     position: absolute;
     pointer-events: none;
@@ -33,7 +28,6 @@ body {
     animation-iteration-count: infinite;
 }
 
-/* Thiết lập tốc độ, vị trí ban đầu khác nhau, và di chuyển toàn hồ */
 #squid {
     width: 160px; height: 160px;
     animation: moveSquid 12s linear infinite;
@@ -88,7 +82,6 @@ body {
     transform: translate(300px, 400px);
 }
 
-/* Keyframes cho từng con vật để di chuyển trong giới hạn hồ cá */
 @keyframes moveSquid {
     0% { transform: translate(50px, 80px); }
     25% { transform: translate(700px, 60px); }
